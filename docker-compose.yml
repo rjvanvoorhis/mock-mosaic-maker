@@ -3,6 +3,8 @@ services:
   mock-mosaic-maker:
     image: ryanjvanvoorhis/mock-mosaic-maker
     build: .
+    environment:
+      - MOSAIC_API_URL=${MOSAIC_API_URL}
     ports:
       - "5080:5080"
 
